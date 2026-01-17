@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CGPAtron Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CGPAtron CGPA Calculator 🎉</h1>
+
+  <div class="card">
+    <h3>Previous Academic Data</h3>
+    <input type="number" id="prevCgpa" placeholder="Previous CGPA">
+    <input type="number" id="prevCredits" placeholder="Total Previous Credits">
+  </div>
+
+  <div class="card">
+    <h3>Current Semester</h3>
+    <input type="number" id="numSubjects" placeholder="Number of Subjects">
+    <button onclick="generateSubjects()">Generate</button>
+    <div id="subjects"></div>
+  </div>
+
+  <button onclick="calculate()">Calculate CGPA</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
